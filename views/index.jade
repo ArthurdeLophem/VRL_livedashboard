@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  //- var teams = ["e","e","y"]
+  - var teams = ["Sector One", "BDS", "OG Esports", "BeGenius", "Vitality", "Wylde", "Valar Morghulis", "Mandatory"]
+  h3 VRL team scoreboard selection
+  div.container
+    label(for='teams') Teams 
+    select(name='dropDown', id='select')
+      option(selected, value='maps won')
+      each n in teams
+        option= n
+
+    input(type='number', placeholder='maps won')
+    input(type='submit', value='Submit')
