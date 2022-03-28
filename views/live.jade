@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  //- var teams = ["e","e","y"]
+  - var teams = ["Sector One", "BDS", "OG Esports", "BeGenius", "Vitality", "Wylde", "Valar Morghulis", "Mandatory"]
+  h2 VRL scoreboard
+  div.teamList
+    div.headings
+        h3 teams
+        h3 maps won
+    each n in teams
+        div.table
+            div.teamCard
+                p= n
+
+            div.scores
+                p= n
