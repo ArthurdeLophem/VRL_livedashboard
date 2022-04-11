@@ -5,7 +5,11 @@ let go = (server) => {
     //primus.save(__dirname + '/primuslib.js');
 
     primus.on('connection', (spark) => {
-        console.log("received sparky ✨");
+        spark.on("data", (data) => {
+            primus.write(data);
+            console.log(data);
+        })
+
     });
 };
 
