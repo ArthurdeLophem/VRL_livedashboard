@@ -18,3 +18,8 @@ document.querySelector(".submit").addEventListener("click", () => {
     let points = document.querySelector(".point").value;
     primus.write({ team: team, points: points });
 })
+
+document.querySelector(".select").addEventListener("change", () => {
+    let team = document.querySelector(".select").value;
+    document.querySelector(".submit").value = "Update Scoreboard For " + team;
+})
