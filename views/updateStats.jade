@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+  //- var teams = ["e","e","y"]
+  - var teams = ["Sector-One", "BDS", "OG-Esports", "BeGenius", "Vitality", "Wylde", "Valar-Morghulis", "Mandatory"]
+  div.header
+    h2 VRL team scoreboard selection
+    img.vrl_logo(src="../images/VRL_Logo.png", alt="vrl-logo")
+    p choose a team to update scores
+  div.scorebuildContainer
+    select.select(name='dropDown', id='select')
+      option(selected, value='maps won')
+      each n in teams
+        option= n
+
+    input.point(type='number', placeholder='maps won')
+    input.submit(type='submit', value='Submit')
+    
+  script(src='/javascripts/app.js')
