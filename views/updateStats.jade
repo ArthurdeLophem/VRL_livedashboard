@@ -10,11 +10,11 @@ block content
     p choose a team to update scores
   div.scorebuildContainer
     select.select(name='dropDown', id='select')
-      option(selected, value='maps won')
+      option(value='0', selected= true) -- Select --
       each n in teams
         option= n
 
-    input.point(type='number', placeholder='maps won')
-    input.submit(type='submit', value='Submit')
+    input.point(type='input', placeholder='amount of maps won')
+    input.submit(type='submit', value='Update Scoreboard')
     
   script(src='/javascripts/app.js')
