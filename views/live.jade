@@ -6,7 +6,7 @@ block content
   - var teams = ["Sector One", "BDS", "OG Esports", "BeGenius", "Vitality", "Wylde", "Valar Morghulis", "Mandatory"]
   div.header
     h2 VRL team scoreboard
-    img.vrl_logo(src="../images/VRL_Logo.png", alt="vrl-logo")
+    img.vrl_logo(src="/images/VRL_Logo.png", alt="vrl-logo")
     p See live updated scores for the VRL
   div.teamList
     div.headings
@@ -18,4 +18,6 @@ block content
                 p= n
 
             div.scores
-                p= n
+                p(class=n) 0
+
+  script(src='/javascripts/app.js')
