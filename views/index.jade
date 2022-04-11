@@ -4,13 +4,15 @@ block content
 
   //- var teams = ["e","e","y"]
   - var teams = ["Sector One", "BDS", "OG Esports", "BeGenius", "Vitality", "Wylde", "Valar Morghulis", "Mandatory"]
-  h3 VRL team scoreboard selection
-  div.container
-    label(for='teams') Teams 
+  div.header
+    h2 VRL team scoreboard selection
+    img.vrl_logo(src="../images/VRL_Logo.png", alt="vrl-logo")
+    p choose a team to update scores
+  div.scorebuildContainer
     select(name='dropDown', id='select')
       option(selected, value='maps won')
       each n in teams
         option= n
 
     input(type='number', placeholder='maps won')
-    input(type='submit', value='Submit')
+    input.submit(type='submit', value='Submit')
