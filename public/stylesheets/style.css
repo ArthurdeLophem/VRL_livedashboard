@@ -31,7 +31,7 @@ p {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr 1fr);
   grid-template-rows: 1 1fr;
 }
 
@@ -52,7 +52,9 @@ p {
     -20px -20px 60px #484848;
   padding: 25px;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
+  row-gap: 10px;
 }
 
 .submit {
