@@ -16,9 +16,18 @@ document.querySelector(".submit").addEventListener("click", () => {
     let team = document.querySelector(".select").value;
     let points = document.querySelector(".point").value;
     primus.write({ team: team, points: points });
+    subFeedback();
 })
 
 document.querySelector(".select").addEventListener("change", () => {
     let team = document.querySelector(".select").value;
     document.querySelector(".submit").value = "Update Scoreboard For " + team;
+    document.querySelector(".submitFeedback").classList.add("disabled");
 })
+
+subFeedback = () => {
+    document.querySelector(".submitFeedback").classList.remove("disabled");
+    setTimeout(() => {
+        document.querySelector(".submitFeedback").classList.add("disabled");
+    }, 2000)
+};
