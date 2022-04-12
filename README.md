@@ -4,7 +4,7 @@
 
 ### still to do:
 
-- [ ] push to heroku.com
+- [x] push to heroku.com
 - [ ] check and update readme files
 - [ ] update gif with hosted app
 

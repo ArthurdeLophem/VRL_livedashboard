@@ -9,7 +9,6 @@ const primus = Primus.connect("/", {
 primus.on("data", data => {
     let team = "." + data.team;
     let points = data.points;
-    //console.log(team, points)
     document.querySelector(team).innerHTML = points;
 });
 
