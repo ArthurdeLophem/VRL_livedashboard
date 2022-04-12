@@ -1,11 +1,9 @@
 # VRL_livedashboard
 
-**welcome to the official unofficial vrl live updating dashboard**
+**welcome to the official unofficial vrl live updating dashboard, check and update map scores for each team in the tournament**
 
-### still to do:
+![show-off](https://p11.f2.n0.cdn.getcloudapp.com/items/5zuLPNqp/4cd7b6b5-43d1-46ae-923d-242d69653a27.gif)
 
-- [x] push to heroku.com
-- [ ] check and update readme files
-- [ ] update gif with hosted app
-
-![show-off](https://p11.f2.n0.cdn.getcloudapp.com/items/DOu4r8RO/e6f0f4ba-f1d8-4158-8db2-9ca7d59b3529.gif)
+## link to app
+- **live team listing:  https://vrl-dashboard.herokuapp.com/**
+- **live team score updater: https://vrl-dashboard.herokuapp.com/updatestats**
